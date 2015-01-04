@@ -131,3 +131,19 @@ Salida
 </div>
 ...
 ```
+
+### [comp-notifier][box-notifier]
+
+El elemento con el atributo `box-notifier` es donde aparecerán todas las notificaciones, una ves sean creadas con el método `notification()`.
+
+```html
+...
+<div box-notifier>
+	<div alert-default>
+		<div text>Primer mensaje creado</div>
+	</div>
+	<div alert-default>
+		<div text>Segundo mensaje creado</div>
+	</div>
+</div>
+...
