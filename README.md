@@ -61,7 +61,7 @@ El archivo `cap_notification.js` es el el componente que sera incluido en nuestr
 El modelo de las notificaciones son modelos escritos en HTML los cuales permiten crear las notificaciones en cuanto estas sean llamadas por el método `notification`. Para lo que este modelo tendrá reglas especificas para administrar el modelo.
 
 ```html
-<div **comp-notifier**>
+<div comp-notifier>
 	<div models>
 		<div alert-warning>
 			<div text></div>
@@ -73,3 +73,13 @@ El modelo de las notificaciones son modelos escritos en HTML los cuales permiten
 	<div box-notifier></div>
 </div>
 ```
+
+### comp-notifier
+
+El atributo `comp-notifier` identifica al objeto que se ara cargo del entorno. Lo que significa que contendrá tanto los modelos como el bloque de las notificaciones a generar.
+
+### models
+
+El elemento con el atributo `models` debe siempre de estar siempre dentro de un objeto con el atributo `comp-notifier`, y se ara cargo de los modelos a utilizar.
+
+Es capas de soportar tantos modelos como queramos diseñar, y se diferenciaran por el nombre definido con el atributo `alert-` Ej. El modelo con el atributo `alert-warning` puede ser encontrado como el modelo `warning`.  
