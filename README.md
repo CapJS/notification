@@ -34,9 +34,17 @@ notification/
 └── README.md
 ```
 
+# Mi primera aplicación
 
+## Dependencias
 
-y debes de cargar el script dentro del head de tu documento html.
+Este componentes requiere satisfacer las necesidades:
+
+ - [jQuery](https://github.com/jquery/jquery)
+
+## Archivo cap_notification.js
+
+El archivo `cap_notification.js` es el el componente que sera incluido en nuestro documento HTML cada ves que deseemos, utilizar este componente en nuestro proyecto para lo que lo incluiremos dentro de la etiqueta `<meta>`. y podemos usar su versión mirificada `cap_notification.min.js` la que remplaza a `cap_notification.js`.
 
 ```html
 ...
@@ -47,3 +55,9 @@ y debes de cargar el script dentro del head de tu documento html.
 </head>
 ...
 ```
+
+## Construir modelo de notificaciones
+
+El modelo de las notificaciones son modelos escritos en HTML los cuales permiten crear las notificaciones ne cuanto estas sean llamadas por el método `notification`.
+
+
