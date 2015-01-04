@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="../cap_notification.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="text-center">
+					<h1>Ejemplo Uno</h1>
+					<p class="lead">En este ejemplo genera dos notificaciones.</p>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<!-- Modelo para las notificaciones -->
+				<div comp-notifier>
+					<div models>
+						<div alert-warning class="alert alert-warning">
+							<div text>Es aquí en donde aparecen los textos</div>
+						</div>
+						<div alert-danger class="alert alert-danger">
+							<div text>Es aquí en donde aparecen los textos</div>
+						</div>
+					</div>
+					<div box-notifier></div>
+				</div>
+				<!-- Fin de Modelo para las notificaciones -->
+			</div>
+			<!-- Script de la aplicación -->
+			<script>
+				+function($){
+					$.notification('warning','Se ha generado un mensaje de alerta.')
+					$.notification('warning','Se ha generado un mensaje de alerta, con un temporizador de 5000ms (5 Segundos)',5000)
+					$.notification('danger','La alerta ha cambiado de tipo a \'danger\' y se incluido una <strong>etiqueta</strong> <code>strong</code> ')
+				}(jQuery)
+			</script>
+			<!-- Fin Script de la aplicación -->
+			<div class="container">
+				<h2>Código Aplicación</h2>
+				<pre>+function($){
+	$.notification('warning','Se ha generado un mensaje de alerta.')
+	$.notification('warning','Se ha generado un mensaje de alerta, con un temporizador de 5000ms (5 Segundos)',5000)
+	$.notification('danger','La alerta ha cambiado de tipo a \'danger\' y se incluido una <strong>etiqueta</strong> <code>strong</code> ')
+}(jQuery)</pre>
+			</div>
+		</main>
+	</body>
+</html>
