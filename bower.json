@@ -1,0 +1,10 @@
+{
+  "name": "cap_notification",
+  "version": "1.0.0",
+  "main": [
+  	"cap_notification.js"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.3"
+  }
+}
