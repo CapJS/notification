@@ -98,3 +98,36 @@ Los elementos cuyo atributo inicie con `alert-`, deben de ser especificados dent
 </div>
 ```
 
+### [comp-notifier][models][alert-*][text]
+
+El elemento con el atributo `text` identificara la ubicación del texto enviado a la notificación, y este texto puede ser escrito en HTML.
+
+Ej. Aplicación
+
+```html
+...
+<div alert-default>
+	El texto de la alerta es => [<div text></div>]
+</div>
+...
+<script>
+	notification('default','Hola este es mi nueva alerta Uno.')
+	notification('default','Hola este es mi nueva <strong>alerta</strong> Dos.')
+</script>
+...
+```
+
+Salida
+
+```html
+...
+<div box-notifier>
+	<div alert-default>
+		El texto de la alerta es => [<div text>Hola este es mi nueva alerta Uno.</div>]
+	</div>
+	<div alert-default>
+		El texto de la alerta es => [<div text>Hola este es mi nueva <strong>alerta</strong> Dos.</div>]
+	</div>
+</div>
+...
+```
