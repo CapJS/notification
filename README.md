@@ -147,3 +147,32 @@ El elemento con el atributo `box-notifier` es donde aparecerán todas las notifi
 	</div>
 </div>
 ...
+```
+
+## Construir aplicación en JavaScript
+
+### Métodos: notification y $.notification
+
+Este Serán usados para crear nuestra notificaciones una ves las tengamos creados todos los [modelos](#construir-modelo-de-notificaciones). Para esto debemos ir a nuestro código JavaScript e ir llamando el método cada ves que deseemos ocuparlo.
+
+```javascript
+/*
+ | Se crea una alerta cada un segundo notificando la hora
+ | Y esta desaparece luego de un segundo.
+ */
+setInterval(function(){
+	notification('default','La hora es :'+(new Date()),1000);
+},1000);
+```
+
+# Creador
+	
+**Jonathan Delgado Zamorano**
+- [http://jonad.in](http://jonad.in)
+- [https://twitter.com/jonad_in](http://twitter.com/jonad_in)
+- [https://github.com/alfa30](https://github.com/alfa30)
+
+
+# Copyright y licencia
+
+Código y Documentación Copyright 2015 [@jonad_in](http://twitter.com/jonad_in). Liberado bajo [the license MIT](https://github.com/CapJS/notification/blob/master/LICENSE). 
